@@ -44,13 +44,46 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // this will print the keys of the object
-console.log(Object.values(tinderUser)); // this will print the values of the object
-console.log(Object.entries(tinderUser)); // this will print the entries of the object
+// console.log(Object.keys(tinderUser)); // this will print the keys of the object
+// console.log(Object.values(tinderUser)); // this will print the values of the object
+// console.log(Object.entries(tinderUser)); // this will print the entries of the object
 
-console.log(tinderUser.hasOwnProperty("email")); // this will check if the object has the key email
+// console.log(tinderUser.hasOwnProperty("email")); // this will check if the object has the key email
+
+
+const course = {
+    title: "Javascript in Hindi",
+    courseInstructor: "Kunal",
+    price: 299,
+}
+
+// course.courseInstructor // this will print Kunal
+
+const {courseInstructor} = course; // this will destructure the object and get the value of courseInstructor
+const {courseInstructor: instructor} = course; // this will destructure the object and get the value of courseInstructor and rename it to instructor
+// console.log(courseInstructor); // this will print Kunal
+console.log(instructor); // this will print Kunal
+
+
+// {
+//     name: "Kunal",
+//     age: 28,
+//     isLoggedIn: false,
+//     lastLogin: 2,
+//     courses: ["Javascript", "Python", "Java"],
+//     isPremium: true,
+//     courseCount: 0,
+// }
+
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
+
 
 
 
